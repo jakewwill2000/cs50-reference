@@ -185,3 +185,30 @@ style50 mario-harder/mario.c
 vim mario-harder/mario.c
 style50 mario-harder/mario.c
 cd ..
+git add .
+git commit -m "Make code conform to style50 guidelines"
+git push
+ls
+touch demo,c
+rm demo,c
+touch demo.c
+make demo
+./demo
+make demo
+./demo
+make demo
+./demo
+cd pset1/credit
+make credit
+check50 cs50/problems/2020/x/credit
+style50 credit.c
+cd ..
+ls
+git add .
+rm dmeo
+rm demo
+rm demo.c
+ls
+git add .
+git commit -m "Fixed issue with credit"
+git config --global user.email "jakewwill2000@gmail.com"

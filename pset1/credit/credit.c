@@ -34,13 +34,6 @@ int main(void)
 
 bool is_valid_card(long card)
 {
-    // If the card has fewer than 13 or more than 16 digits, automatically
-    // return false, as it must be invalid.
-    if (card < pow(10, 12) || card >= pow(10, 16))
-    {
-        return false;
-    }
-
     // Represents the formula for the sum of digits described in Luhn's algorithm.
     int digits_sum = 0;
 
@@ -80,18 +73,13 @@ string card_type(long card)
         return "MASTERCARD";
     }
 
-    if (first_two == 34 || first_two == 37 && num_digits(card) == 15)
+    if ((first_two == 34 || first_two == 37) && num_digits(card) == 15)
     {
         return "AMEX";
     }
 
-    // VISA cards are slightly different - we don't need to confirm that
-    // the length is correct because our is_valid_card function already
-    // determines that the card must be between 13 and 16 digits long.
-    // We only need to verify that it begins with a 4.
-
     int first = card / pow(10, num_digits(card) - 1);
-    if (first == 4)
+    if (first == 4 && (num_digits(card) == 13 || num_digits(card) == 16))
     {
         return "VISA";
     }
