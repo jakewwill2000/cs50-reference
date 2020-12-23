@@ -94,3 +94,42 @@ ls
 rm demo.c
 ls
 git init
+git add .
+git commit -m "Initial Commit"
+git config --global user.email "jakewwill2000@gmail.com"
+git commit -m "Initial Commit"
+git remote add origin https://github.com/jakewwill2000/cs50-reference.git
+git push -u origin master
+ls
+cd pset1
+ls
+mkdir mario-easier
+mv mario mario-harder
+ls
+cd ..
+ls
+touch gitignore
+ls
+cd cash
+ls
+cd pset1
+ls
+cd cash
+ls
+rm cash
+cd ..
+ls
+cd credit
+ls
+rm credit -rf
+ls
+cd ..
+ls
+cd mario-harder
+ls
+rm mario -rf
+ls
+cd ..
+ls
+cd ..
+ls
