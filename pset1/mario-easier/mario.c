@@ -16,9 +16,6 @@ int main(void)
         print_chars(' ', height - i);
         print_chars('#', i);
 
-        printf(" ");
-        print_chars('#', i);
-
         printf("\n");
     }
 }

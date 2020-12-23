@@ -133,3 +133,34 @@ cd ..
 ls
 cd ..
 ls
+git add .
+git commit -m "Removed executables"
+git push
+ls
+cd pset1
+ls
+cpy
+cd mario-harder/mario.c mario-easier/mario.c
+cpy mario-harder/mario.c mario-easier/mario.c
+copy mario-harder/mario.c mario-easier/mario.c
+ls
+touch mario-easier/mario.c
+ls
+cd mario-easier
+make mario
+./mario
+cd ..
+ls
+cd mario-harder
+make mario
+./mario
+cd ..
+s
+ls
+cd cash
+ls
+make cash
+./cash
+cd ..
+ls
+cd ..
