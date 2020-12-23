@@ -164,3 +164,24 @@ make cash
 cd ..
 ls
 cd ..
+git add .
+git commit -m "Created separate versions for mario"
+git push
+make credit
+ls
+cd pset1/credit
+make credit
+check50 cs50/problems/2020/x/credit
+style50 credit.c
+cd ..
+style50 cash/cash.c
+style50 mario-easier/mario.c
+cd pset1
+style50 mario-easier/mario.c
+ls
+vim mario-easier/mario.c
+style50 mario-easier/mario.c
+style50 mario-harder/mario.c
+vim mario-harder/mario.c
+style50 mario-harder/mario.c
+cd ..

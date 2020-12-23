@@ -9,7 +9,8 @@ int main(void)
     do 
     {
         height = get_int("Enter the height: ");
-    } while (height < 1 || height > 8);
+    }
+    while (height < 1 || height > 8);
 
     for (int i = 1; i <= height; i++) 
     {
@@ -22,6 +23,8 @@ int main(void)
         printf("\n");
     }
 }
+
+// This function prints the character 'c', 'n' times
 
 void print_chars(char c, int n) 
 {

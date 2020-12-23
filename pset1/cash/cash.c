@@ -2,15 +2,23 @@
 #include <cs50.h>
 #include <math.h>
 
-int main(void) {
+int main(void)
+{
     float dollars;
 
-    do {
+    do
+    {
         dollars = get_float("Enter number of dollars: ");
-    } while (dollars < 0);
+    }
+    while (dollars < 0);
 
     int total_coins = 0;
     int cents = round(dollars * 100);
+
+    // The following steps make use of the fact that dividing
+    // 'cents' by some value N returns the number of times 'N'
+    // can fit into 'cents', and taking the modulus of 'cents'
+    // with 'N' returns the remainder.
 
     total_coins += cents / 25;
     cents = cents % 25;
